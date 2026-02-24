@@ -1,4 +1,4 @@
-package com.example.eshop;
+package com.example.eshop.Produkt;
 
 import com.example.eshop.product.DigitalProduct;
 import org.junit.jupiter.api.Test;
@@ -25,4 +25,18 @@ public class Testprodukt {
                 () -> assertEquals(price,product.getPrice(),"Name shouldmatch"),
                 () -> assertEquals(url,product.getDownloadUrl(),"Name shouldmatch"));
     }
+
+    @Test
+    void setProducturl(){
+        String name="fas";
+        String description="";
+        BigDecimal price=new BigDecimal(10);
+        String url ="https://seznam.cz";
+
+        DigitalProduct product=new DigitalProduct(name,description,price,url);
+        url="https://sez25nam.cz";
+        product.setDownloadUrl(url);
+    }
+
+
 }

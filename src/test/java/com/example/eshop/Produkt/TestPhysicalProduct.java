@@ -1,6 +1,5 @@
-package com.example.eshop;
+package com.example.eshop.Produkt;
 
-import com.example.eshop.product.DigitalProduct;
 import com.example.eshop.product.PhysicalProduct;
 import org.junit.jupiter.api.Test;
 
@@ -27,4 +26,28 @@ public class TestPhysicalProduct {
                 () -> assertEquals(shippingCost,product.getShippingCost(),"Name shouldmatch"));
 
     }
+    @Test
+    void setWeight() {
+        String name = " Karel";
+        String description = "nevim";
+        BigDecimal price = new BigDecimal(10);
+        double weight = 10;
+        BigDecimal shippingCost = new BigDecimal(69);
+
+        PhysicalProduct product = new PhysicalProduct(name, description, price, weight, shippingCost);
+        product.setWeight(weight);
+    }
+
+    @Test
+    void setShippingCost() {
+        String name = "Karel";
+        String description = "nevim";
+        BigDecimal price = new BigDecimal(10);
+        double weight = 10;
+        BigDecimal shippingCost = new BigDecimal(69);
+        PhysicalProduct product = new PhysicalProduct(name, description, price, weight, shippingCost);
+        product.setShippingCost(shippingCost);
+    }
+
+
 }
