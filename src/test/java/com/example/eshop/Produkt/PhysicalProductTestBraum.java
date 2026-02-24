@@ -7,9 +7,9 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-public class TestPhysicalProduct {
+public class PhysicalProductTestBraum {
     @Test
-    void createNewDigitalProduct(){
+    void createNewDigitalProductBraum(){
                String name=" Karel";
                String description="nevim";
                BigDecimal price=new BigDecimal(10);
@@ -27,7 +27,7 @@ public class TestPhysicalProduct {
 
     }
     @Test
-    void setWeight() {
+    void setWeightBraum() {
         String name = " Karel";
         String description = "nevim";
         BigDecimal price = new BigDecimal(10);
@@ -39,7 +39,7 @@ public class TestPhysicalProduct {
     }
 
     @Test
-    void setShippingCost() {
+    void setShippingCostBraum() {
         String name = "Karel";
         String description = "nevim";
         BigDecimal price = new BigDecimal(10);

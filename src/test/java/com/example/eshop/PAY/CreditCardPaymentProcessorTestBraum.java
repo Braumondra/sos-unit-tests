@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
 
-public class TestCreditCardPaymentProcessor {
+public class CreditCardPaymentProcessorTestBraum {
     @Test
-    void newCreditCardPaymentProcessor()
+    void newCreditCardPaymentProcessorBraum()
     {
         BigDecimal amount = new BigDecimal(69);
         CreditCardPaymentProcessor processor = new CreditCardPaymentProcessor();

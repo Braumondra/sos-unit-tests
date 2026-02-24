@@ -1,6 +1,6 @@
 package com.example.eshop.Cart;
 
-public class TestCartItem {
+public class CartItemTestBraum {
     /*@Test
     void createNewCartItem() {
         Product p =new Product() {
