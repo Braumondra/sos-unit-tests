@@ -18,7 +18,7 @@ public class ParametrickyTestBraum {
             "100.00, 1, 50.00, 2, 200.00",
             "0.00, 5, 10.00, 1, 10.00"
     })
-    void shouldCalculateTotalCorrectly(String price1, int qty1,
+    void shouldCalculateTotalCorrectlyBraum(String price1, int qty1,
                                        String price2, int qty2,
                                        String expectedTotal) {
 
